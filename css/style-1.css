@@ -1,10 +1,14 @@
-@keyframes hover {
-    from {
-        background: rgb(175, 175, 175);
-        transform: scale(1.0);
-    } to {
-        background: rgb(145, 145, 145);
+@keyframes hover-1 {
+    100% {
+        background-image: url(../assets/images/icon-2.png);
         transform: scale(0.9);
+    }
+}
+
+@keyframes hover-2 {
+    100% {
+        background-image: url(../assets/images/icon-1.png);
+        transform: scale(1.0);
     }
 }
 
@@ -21,7 +25,8 @@
 }
 
 .row > button {
-    background: url(../assets/images/icon-1.png);
+    animation-duration: 0.25s;
+    background-image: url(../assets/images/icon-1.png);
     background-clip: padding-box;
     background-size: cover;
     border-bottom: 5px solid #FFB9D1;
