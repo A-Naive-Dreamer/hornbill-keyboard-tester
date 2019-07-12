@@ -9,7 +9,7 @@
 }
 
 #keyboard {
-    background: #404040;
+    background:url(../assets/images/bg.png);
     margin: 0 auto;
     padding: 5px;
     width: auto;
@@ -21,7 +21,9 @@
 }
 
 .row > button {
-    background: rgb(175, 175, 175);
+    background: url(../assets/images/icon-1.png);
+    background-clip: padding-box;
+    background-size: cover;
     border-bottom: 5px solid #FFB9D1;
     border-left: 2px solid #FFB9D1;
     border-right: 5px solid #FFB9D1;

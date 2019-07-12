@@ -1,13 +1,13 @@
 $('.keyboard-buttons').mouseenter(function () {
     $(this).css({
-        'background': 'rgb(145, 145, 145)',
+        'background-image': 'url(../assets/images/icon-2.png)',
         'transform': 'scale(0.9)'
     })
 })
 
-$('.keyboard-buttons').mouseout(function () {
+$('.keyboard-buttons').mouseleave(function () {
     $(this).css({
-        'background': 'rgb(175, 175, 175)',
+        'background-image': 'url(../assets/images/icon-1.png)',
         'transform': 'scale(1.0)'
     })
 })
