@@ -1,0 +1,37 @@
+@keyframes hover {
+    from {
+        background: rgb(175, 175, 175);
+        transform: scale(1.0);
+    } to {
+        background: rgb(145, 145, 145);
+        transform: scale(0.9);
+    }
+}
+
+#keyboard {
+    background: #404040;
+    margin: 0 auto;
+    padding: 5px;
+    width: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.row > button {
+    background: rgb(175, 175, 175);
+    border-bottom: 5px solid #FFB9D1;
+    border-left: 2px solid #FFB9D1;
+    border-right: 5px solid #FFB9D1;
+    border-top: 2px solid #FFB9D1;
+    border-radius: 10px;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    height: 50px;
+    padding: 5px;
+    margin: 5px;
+    width: 50px;
+}
