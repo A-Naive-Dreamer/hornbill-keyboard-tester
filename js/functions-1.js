@@ -1,18 +1,26 @@
 var records = [],
-    charCode = ''
+    charCode = '',
+    animate1 = function () {},
+    animate2 = function () {}
 
-$(document).keypress(function(event) {
-    charCode = '#' + event.key.toUpperCase()
+$(document).keydown(function(event) {
+    animate1 = (function() {
+        let key = '#' + event.key.toUpperCase()
 
-    $(charCode).css({
-        'animation-name': 'hover-1'
-    })
-})
+        return function() {
+            $(key).css({
+                'animation-name': 'hover-1'
+            })
 
-$(document).keyup(function(event) {
-    $(charCode).css({
-        'animation-name': 'hover-2'
-    })
+            $(document).keyup(function(event) {
+                $(key).css({
+                    'animation-name': 'hover-2'
+                })
+            })
+        }
+    })()
+
+    animate1()
 })
 
 $('.keyboard-buttons').mouseenter(function() {

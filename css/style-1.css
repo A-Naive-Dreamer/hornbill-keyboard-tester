@@ -16,7 +16,6 @@
     background:url(../assets/images/bg.png);
     margin: 0 auto;
     padding: 5px;
-    width: auto;
 }
 
 .row {
@@ -25,9 +24,10 @@
 }
 
 .row > button {
-    animation-duration: 0.25s;
-    background-image: url(../assets/images/icon-1.png);
+    animation-duration: 0.05s;
+    animation-fill-mode: forwards;
     background-clip: padding-box;
+    background-image: url(../assets/images/icon-1.png);
     background-size: cover;
     border-bottom: 5px solid #FFB9D1;
     border-left: 2px solid #FFB9D1;
@@ -38,8 +38,8 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
     height: 50px;
-    padding: 5px;
     margin: 5px;
+    padding: 5px;
     width: 50px;
 }
 
