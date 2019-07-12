@@ -35,3 +35,7 @@
     margin: 5px;
     width: 50px;
 }
+
+.row > button:hover {
+    cursor: pointer;
+}
