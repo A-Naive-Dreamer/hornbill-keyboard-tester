@@ -12,6 +12,10 @@
     }
 }
 
+body {
+    font-size: 1em;
+}
+
 #keyboard {
     background:url(../assets/images/bg.png);
     margin: 0 auto;
@@ -28,19 +32,36 @@
     animation-fill-mode: forwards;
     background-clip: padding-box;
     background-image: url(../assets/images/icon-1.png);
-    background-size: cover;
+    background-repeat: repeat-x;
+    background-size: 50px;
     border-bottom: 5px solid #FFB9D1;
     border-left: 2px solid #FFB9D1;
     border-right: 5px solid #FFB9D1;
     border-top: 2px solid #FFB9D1;
     border-radius: 10px;
     display: inline-block;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     height: 50px;
     margin: 5px;
+    min-width: 50px;
     padding: 5px;
-    width: 50px;
+}
+
+.smaller-buttons {
+    font-size: 0.75em;
+}
+
+#char-code-8, #char-code-9 {
+    width: 170px;
+}
+
+#char-code-20, #char-code-13, .shift-button {
+    width: 140px;
+}
+
+#char-code-32 {
+    width: 410px;
 }
 
 .row > button:hover {

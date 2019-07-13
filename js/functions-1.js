@@ -3,39 +3,37 @@ var records = [],
     animate1 = function () {},
     animate2 = function () {}
 
-$(document).keydown(function(event) {
-    animate1 = (function() {
-        let key = '#' + event.key.toUpperCase()
+$(document).keydown((event) => {
+    animate1 = () => {
+        let key = '#char-code-' + event.which
 
         return function() {
             $(key).css({
                 'animation-name': 'hover-1'
             })
 
-            $(document).keyup(function(event) {
+            $(document).keyup(() => {
                 $(key).css({
                     'animation-name': 'hover-2'
                 })
             })
         }
-    })()
+    }
 
     animate1()
 })
 
-$('.keyboard-buttons').mouseenter(function() {
+$('.keyboard-buttons').mouseenter(() => {
     /*records.push(Date.now())
     console.log(records)*/
 
     $(this).css({
-        'background-image': 'url(../assets/images/icon-2.png)',
-        'transform': 'scale(0.9)'
+        'animation-name': 'hover-1'
     })
 })
 
-$('.keyboard-buttons').mouseleave(function () {
+$('.keyboard-buttons').mouseleave(() => {
     $(this).css({
-        'background-image': 'url(../assets/images/icon-1.png)',
-        'transform': 'scale(1.0)'
+        'animation-name': 'hover-2'
     })
 })
