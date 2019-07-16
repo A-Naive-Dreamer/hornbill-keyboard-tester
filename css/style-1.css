@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Magneto Bold';
+    font-style: italic;
+    src: url('../magneto-bold.ttf');
+}
+
 @keyframes hover-1 {
     100% {
         background-image: url(../assets/images/icon-2.png);
@@ -16,8 +22,24 @@ body {
     font-size: 1em;
 }
 
+h1 {
+    color: #a000a0;
+    font-family: 'Magneto Bold';
+    font-size: 2em;
+    text-align: center;
+}
+
+h5 {
+    color: #ff0000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+}
+
 #keyboard {
     background:url(../assets/images/bg.png);
+    background-position: center top;
     margin: 0 auto;
     padding: 5px;
 }
@@ -32,6 +54,7 @@ body {
     animation-fill-mode: forwards;
     background-clip: padding-box;
     background-image: url(../assets/images/icon-1.png);
+    background-position: center;
     background-repeat: repeat-x;
     background-size: 50px;
     border-bottom: 5px solid #FFB9D1;
@@ -64,6 +87,19 @@ body {
     width: 410px;
 }
 
+#back-to-main-menu {
+    border: none;
+    width: 100%;
+}
+
+#click-aborter {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+}
+
 .row > button:hover {
+    background-image: url(../assets/images/icon-2.png);
     cursor: pointer;
+    transform: scale(0.9);
 }

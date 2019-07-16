@@ -1,39 +1,19 @@
-var records = [],
-    charCode = '',
-    animate1 = function () {},
-    animate2 = function () {}
+var clickAborter = document.getElementById('click-aborter')
 
-$(document).keydown((event) => {
-    animate1 = () => {
-        let key = '#char-code-' + event.which
+clickAborter.focus()
 
-        return function() {
-            $(key).css({
-                'animation-name': 'hover-1'
-            })
-
-            $(document).keyup(() => {
-                $(key).css({
-                    'animation-name': 'hover-2'
-                })
-            })
-        }
-    }
-
-    animate1()
+document.addEventListener('keydown', () => {
+    clickAborter.focus()
 })
 
-$('.keyboard-buttons').mouseenter(() => {
-    /*records.push(Date.now())
-    console.log(records)*/
+clickAborter.addEventListener('keydown', (event) => {
+    let charCode = 'char-code-' + event.which,
+        key = document.getElementById(charCode)
 
-    $(this).css({
-        'animation-name': 'hover-1'
-    })
-})
+    clickAborter.value = ''
+    key.style.animationName = 'hover-1'
 
-$('.keyboard-buttons').mouseleave(() => {
-    $(this).css({
-        'animation-name': 'hover-2'
+    document.addEventListener('keyup', () => {
+        key.style.animationName = 'hover-2'
     })
 })
