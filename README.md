@@ -42,8 +42,8 @@ A simple keyboard tester built using Electron Framework.
 
 ## Credit
 
-1. [Sixty Nine Neko](https://github.com/sixtynine-neko) as supervisor and designer
-2. [A Naive Dreamer](https://github.com/A-Naive-Dreamer) as programmer
+1. [Ade Rizky Aidul Adha](https://github.com/sixtynine-neko) as supervisor and designer
+2. [Atallabela Yosua](https://github.com/A-Naive-Dreamer) as programmer
 
 ## License
 
