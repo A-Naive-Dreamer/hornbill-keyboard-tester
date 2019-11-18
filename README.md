@@ -15,7 +15,7 @@ A simple keyboard tester built using Electron Framework.
    - [Screenshots](#screenshots)
      1. [Main Menu](#main-menu)
      2. [Tester](#tester)
-4. [Credit](#credit)
+4. [Credits](#credits)
 5. [License](#license)
 
 ## Getting Started
@@ -40,7 +40,7 @@ A simple keyboard tester built using Electron Framework.
 #### Tester
    ![Hornbill Keyboard Tester 2](https://justanaivedreamer.files.wordpress.com/2019/09/capture-1.png)
 
-## Credit
+## Credits
 
 1. [Ade Rizky Aidul Adha](https://github.com/sixtynine-neko) as supervisor and designer
 2. [Atallabela Yosua](https://github.com/A-Naive-Dreamer) as programmer
