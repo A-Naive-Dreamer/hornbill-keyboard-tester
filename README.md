@@ -2,7 +2,7 @@
 
 ## Description
 
-A simple keyboard tester built using Electron Framework.
+A simple Keyboard Tester built using Electron Framework.
 
 ## Table of Contents
 
